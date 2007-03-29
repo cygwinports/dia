@@ -54,15 +54,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dia-0.96-X-src.tar.bz2
+  unpack dia-0.96.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dia-0.96-X.cygport all
+  cygport ./dia-0.96.1-X.cygport all
 
 This will create:
-  /usr/src/dia-0.96-X-src.tar.bz2
-  /usr/src/dia-0.96-X.tar.bz2
+  /usr/src/dia-0.96.1-X-src.tar.bz2
+  /usr/src/dia-0.96.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -1736,16 +1736,16 @@ Files included in the binary package:
   /usr/share/dia/xslt/dia-uml2owl.xsl
   /usr/share/dia/xslt/dia-uml2python.xsl
   /usr/share/dia/xslt/stylesheets.xml
-  /usr/share/doc/Cygwin/dia-0.96.README
-  /usr/share/doc/dia-0.96/AUTHORS
-  /usr/share/doc/dia-0.96/COPYING
-  /usr/share/doc/dia-0.96/ChangeLog
-  /usr/share/doc/dia-0.96/INSTALL
-  /usr/share/doc/dia-0.96/MAINTAINERS
-  /usr/share/doc/dia-0.96/NEWS
-  /usr/share/doc/dia-0.96/README
-  /usr/share/doc/dia-0.96/THANKS
-  /usr/share/doc/dia-0.96/TODO
+  /usr/share/doc/Cygwin/dia-0.96.1.README
+  /usr/share/doc/dia-0.96.1/AUTHORS
+  /usr/share/doc/dia-0.96.1/COPYING
+  /usr/share/doc/dia-0.96.1/ChangeLog
+  /usr/share/doc/dia-0.96.1/INSTALL
+  /usr/share/doc/dia-0.96.1/MAINTAINERS
+  /usr/share/doc/dia-0.96.1/NEWS
+  /usr/share/doc/dia-0.96.1/README
+  /usr/share/doc/dia-0.96.1/THANKS
+  /usr/share/doc/dia-0.96.1/TODO
   /usr/share/gnome/help/dia/en/authors.xml
   /usr/share/gnome/help/dia/en/dia.xml
   /usr/share/gnome/help/dia/en/entities.xml
@@ -1838,7 +1838,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.96-1 -----
+----- version 0.96.1-1 -----
 Initial release for Cygwin.
 
 
