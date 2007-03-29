@@ -1,0 +1,10 @@
+category: Graphics Gnome
+requires: cygwin gdk-pixbuf2 glib2 gtk2-x11 libart_lgpl2 libcairo2 libfreetype26 libgnomeprint22 libintl8 libpng12 libxml2 libxslt pango zlib
+sdesc: "GNOME diagram modeler"
+ldesc: "Dia is a GTK+ based diagram creation program roughly inspired by 
+the commercial Windows program 'Visio', though more geared towards 
+informal diagrams for casual use. It can be used to draw many different 
+kinds of diagrams. It currently has special objects to help draw entity 
+relationship diagrams, UML diagrams, flowcharts, network diagrams, and 
+many other diagrams. It is also possible to add support for new shapes 
+by writing simple XML files, using a subset of SVG to draw the shape."
