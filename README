@@ -10,18 +10,18 @@ by writing simple XML files, using a subset of SVG to draw the shape.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gtk2-x11-2.10.9-1
-  libart_lgpl2-2.3.17-1
-  libcairo2-1.2.6-1
-  libfreetype26-2.2.1-1
-  libgnomeprint22-2.12.1-2
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  libart_lgpl2-2.3.19-1
+  libcairo2-1.4.10-1
+  libfreetype26-2.3.5-1
+  libgnomeprint22-2.18.0-1
   libintl8-0.15-1
-  libpng12-1.2.12-1
-  libxml2-2.6.27-1
+  libpng12-1.2.18-1
+  libxml2-2.6.29-1
   libxslt-1.1.20-1
-  pango-1.14.10-1
+  pango-1.16.5-1
   zlib-1.2.3-2
 
 Build requirements:
@@ -30,19 +30,14 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  bison-2.3-1
-  cygport-0.2.9-1
-  flex-2.5.33-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gnome-common-2.12.0-2
-  gnome-doc-utils-0.8.0-1
-  gtk-doc-1.7-1
-  intltool-0.35.4-1
+  gnome-common-2.18.0-2
+  intltool-0.35.5-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
-  scrollkeeper-0.3.14-2
   sed-4.1.5-2
 
 Canonical website:
@@ -1837,6 +1832,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.96.1-2 -----
+Fixed packaging.
 
 ----- version 0.96.1-1 -----
 Initial release for Cygwin.
