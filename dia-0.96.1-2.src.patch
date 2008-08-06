@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/acinclude.m4 src/dia-0.96.1/acinclude.m4
 --- origsrc/dia-0.96.1/acinclude.m4	2007-01-06 16:39:36.000000000 -0600
 +++ src/dia-0.96.1/acinclude.m4	2007-03-29 12:27:48.656250000 -0500
 @@ -223,7 +223,7 @@
@@ -19,7 +18,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      PYTHON_LIBS="-L${py_config_dir} -lpython${PYTHON_VERSION} $py_localmodlibs $py_basemodlibs $py_other_libs"
      AC_MSG_RESULT(found)
    else
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/lib/Makefile.am src/dia-0.96.1/lib/Makefile.am
 --- origsrc/dia-0.96.1/lib/Makefile.am	2007-01-18 10:49:56.000000000 -0600
 +++ src/dia-0.96.1/lib/Makefile.am	2007-03-29 12:27:48.671875000 -0500
 @@ -27,7 +27,7 @@
@@ -42,7 +40,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  AM_CPPFLAGS = \
  	$(LIBART_CFLAGS) \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/lib/plug-ins.c src/dia-0.96.1/lib/plug-ins.c
 --- origsrc/dia-0.96.1/lib/plug-ins.c	2007-01-06 16:28:26.000000000 -0600
 +++ src/dia-0.96.1/lib/plug-ins.c	2007-03-29 12:27:48.671875000 -0500
 @@ -46,7 +46,7 @@
@@ -54,7 +51,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  #  define PLUG_IN_EXT ".dll"
  #  define PLUG_IN_EXT_LEN 4
  #  define USING_LIBTOOL 0
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/AADL/Makefile.am src/dia-0.96.1/objects/AADL/Makefile.am
 --- origsrc/dia-0.96.1/objects/AADL/Makefile.am	2007-01-06 16:28:08.000000000 -0600
 +++ src/dia-0.96.1/objects/AADL/Makefile.am	2007-03-29 12:27:48.687500000 -0500
 @@ -21,7 +21,8 @@
@@ -67,7 +63,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/ER/Makefile.am src/dia-0.96.1/objects/ER/Makefile.am
 --- origsrc/dia-0.96.1/objects/ER/Makefile.am	2007-01-06 16:28:09.000000000 -0600
 +++ src/dia-0.96.1/objects/ER/Makefile.am	2007-03-29 12:27:48.687500000 -0500
 @@ -8,7 +8,8 @@
@@ -80,7 +75,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/FS/Makefile.am src/dia-0.96.1/objects/FS/Makefile.am
 --- origsrc/dia-0.96.1/objects/FS/Makefile.am	2007-01-06 16:28:09.000000000 -0600
 +++ src/dia-0.96.1/objects/FS/Makefile.am	2007-03-29 12:27:48.703125000 -0500
 @@ -7,7 +7,8 @@
@@ -93,7 +87,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/GRAFCET/Makefile.am src/dia-0.96.1/objects/GRAFCET/Makefile.am
 --- origsrc/dia-0.96.1/objects/GRAFCET/Makefile.am	2007-01-06 16:28:10.000000000 -0600
 +++ src/dia-0.96.1/objects/GRAFCET/Makefile.am	2007-03-29 12:27:48.703125000 -0500
 @@ -15,7 +15,8 @@
@@ -106,7 +99,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) $(XML_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/Istar/Makefile.am src/dia-0.96.1/objects/Istar/Makefile.am
 --- origsrc/dia-0.96.1/objects/Istar/Makefile.am	2007-01-06 16:28:02.000000000 -0600
 +++ src/dia-0.96.1/objects/Istar/Makefile.am	2007-03-29 12:27:48.953125000 -0500
 @@ -9,7 +9,8 @@
@@ -119,7 +111,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(FREETYPE_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/Jackson/Makefile.am src/dia-0.96.1/objects/Jackson/Makefile.am
 --- origsrc/dia-0.96.1/objects/Jackson/Makefile.am	2007-01-06 16:28:02.000000000 -0600
 +++ src/dia-0.96.1/objects/Jackson/Makefile.am	2007-03-29 12:27:48.968750000 -0500
 @@ -8,7 +8,8 @@
@@ -132,7 +123,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(FREETYPE_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/KAOS/Makefile.am src/dia-0.96.1/objects/KAOS/Makefile.am
 --- origsrc/dia-0.96.1/objects/KAOS/Makefile.am	2007-01-06 16:28:06.000000000 -0600
 +++ src/dia-0.96.1/objects/KAOS/Makefile.am	2007-03-29 12:27:48.968750000 -0500
 @@ -9,7 +9,8 @@
@@ -145,7 +135,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(FREETYPE_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/Misc/Makefile.am src/dia-0.96.1/objects/Misc/Makefile.am
 --- origsrc/dia-0.96.1/objects/Misc/Makefile.am	2007-01-06 16:28:03.000000000 -0600
 +++ src/dia-0.96.1/objects/Misc/Makefile.am	2007-03-29 12:27:48.968750000 -0500
 @@ -6,7 +6,8 @@
@@ -158,7 +147,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/Misc/libmisc.c src/dia-0.96.1/objects/Misc/libmisc.c
 --- origsrc/dia-0.96.1/objects/Misc/libmisc.c	2007-01-06 16:28:03.000000000 -0600
 +++ src/dia-0.96.1/objects/Misc/libmisc.c	2007-03-29 12:27:49.015625000 -0500
 @@ -29,7 +29,7 @@
@@ -179,7 +167,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
    object_register_type(&newgroup_type);
  #endif
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/SADT/Makefile.am src/dia-0.96.1/objects/SADT/Makefile.am
 --- origsrc/dia-0.96.1/objects/SADT/Makefile.am	2007-01-06 16:28:03.000000000 -0600
 +++ src/dia-0.96.1/objects/SADT/Makefile.am	2007-03-29 12:27:49.015625000 -0500
 @@ -8,7 +8,8 @@
@@ -192,7 +179,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/UML/Makefile.am src/dia-0.96.1/objects/UML/Makefile.am
 --- origsrc/dia-0.96.1/objects/UML/Makefile.am	2007-01-06 16:28:06.000000000 -0600
 +++ src/dia-0.96.1/objects/UML/Makefile.am	2007-03-29 12:27:49.031250000 -0500
 @@ -38,7 +38,8 @@
@@ -205,7 +191,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/bondgraph/Makefile.am src/dia-0.96.1/objects/bondgraph/Makefile.am
 --- origsrc/dia-0.96.1/objects/bondgraph/Makefile.am	2007-01-06 16:28:08.000000000 -0600
 +++ src/dia-0.96.1/objects/bondgraph/Makefile.am	2007-03-29 12:27:49.031250000 -0500
 @@ -4,7 +4,8 @@
@@ -218,7 +203,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/chronogram/Makefile.am src/dia-0.96.1/objects/chronogram/Makefile.am
 --- origsrc/dia-0.96.1/objects/chronogram/Makefile.am	2007-01-06 16:28:06.000000000 -0600
 +++ src/dia-0.96.1/objects/chronogram/Makefile.am	2007-03-29 12:27:49.046875000 -0500
 @@ -10,7 +10,8 @@
@@ -231,7 +215,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/custom/Makefile.am src/dia-0.96.1/objects/custom/Makefile.am
 --- origsrc/dia-0.96.1/objects/custom/Makefile.am	2007-01-06 16:28:09.000000000 -0600
 +++ src/dia-0.96.1/objects/custom/Makefile.am	2007-03-29 12:27:49.062500000 -0500
 @@ -10,7 +10,8 @@
@@ -244,7 +227,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  shapedir = $(pkgdatadir)/shapes
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/flowchart/Makefile.am src/dia-0.96.1/objects/flowchart/Makefile.am
 --- origsrc/dia-0.96.1/objects/flowchart/Makefile.am	2007-01-06 16:28:02.000000000 -0600
 +++ src/dia-0.96.1/objects/flowchart/Makefile.am	2007-03-29 12:27:49.062500000 -0500
 @@ -8,7 +8,8 @@
@@ -257,7 +239,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/network/Makefile.am src/dia-0.96.1/objects/network/Makefile.am
 --- origsrc/dia-0.96.1/objects/network/Makefile.am	2007-01-06 16:28:03.000000000 -0600
 +++ src/dia-0.96.1/objects/network/Makefile.am	2007-03-29 12:27:49.078125000 -0500
 @@ -9,7 +9,8 @@
@@ -270,7 +251,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/objects/standard/Makefile.am src/dia-0.96.1/objects/standard/Makefile.am
 --- origsrc/dia-0.96.1/objects/standard/Makefile.am	2007-01-06 16:28:08.000000000 -0600
 +++ src/dia-0.96.1/objects/standard/Makefile.am	2007-03-29 12:27:49.078125000 -0500
 @@ -14,7 +14,8 @@
@@ -283,7 +263,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  ICON_PNG_PAIRS= \
  	arc_icon $(srcdir)/pixmaps/arc.png \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/cairo/Makefile.am src/dia-0.96.1/plug-ins/cairo/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/cairo/Makefile.am	2007-01-06 16:39:29.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/cairo/Makefile.am	2007-03-29 12:27:49.125000000 -0500
 @@ -7,8 +7,8 @@
@@ -297,7 +276,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libcairo_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(CAIRO_LIBS)
  
  INCLUDES = -I$(srcdir)/../../lib $(GTK_CFLAGS) $(DEBUG_FLAGS) $(CAIRO_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/cgm/Makefile.am src/dia-0.96.1/plug-ins/cgm/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/cgm/Makefile.am	2007-01-06 16:39:32.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/cgm/Makefile.am	2007-03-29 12:27:49.125000000 -0500
 @@ -4,7 +4,8 @@
@@ -310,7 +288,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/dxf/Makefile.am src/dia-0.96.1/plug-ins/dxf/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/dxf/Makefile.am	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/dxf/Makefile.am	2007-03-29 12:27:49.125000000 -0500
 @@ -8,7 +8,8 @@
@@ -323,7 +300,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) 
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/gprint/Makefile.am src/dia-0.96.1/plug-ins/gprint/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/gprint/Makefile.am	2007-01-06 16:39:31.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/gprint/Makefile.am	2007-03-29 12:27:49.140625000 -0500
 @@ -12,8 +12,8 @@
@@ -337,7 +313,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libgprint_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(GNOMEPRINT_LIBS)
  
  INCLUDES = -I$(srcdir)/../../lib $(GTK_CFLAGS) $(DEBUG_FLAGS) $(GNOMEPRINT_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/hpgl/Makefile.am src/dia-0.96.1/plug-ins/hpgl/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/hpgl/Makefile.am	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/hpgl/Makefile.am	2007-03-29 12:27:49.171875000 -0500
 @@ -1,7 +1,8 @@
@@ -350,7 +325,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib \
    $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/metapost/Makefile.am src/dia-0.96.1/plug-ins/metapost/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/metapost/Makefile.am	2007-01-06 16:39:29.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/metapost/Makefile.am	2007-03-29 12:27:49.187500000 -0500
 @@ -7,7 +7,8 @@
@@ -363,7 +337,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
   $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(DEBUG_CFLAGS) \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/pgf/Makefile.am src/dia-0.96.1/plug-ins/pgf/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/pgf/Makefile.am	2007-01-06 16:39:32.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/pgf/Makefile.am	2007-03-29 12:27:49.187500000 -0500
 @@ -7,7 +7,8 @@
@@ -376,7 +349,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/pixbuf/Makefile.am src/dia-0.96.1/plug-ins/pixbuf/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/pixbuf/Makefile.am	2007-01-06 16:39:29.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/pixbuf/Makefile.am	2007-03-29 12:27:49.203125000 -0500
 @@ -5,6 +5,7 @@
@@ -388,7 +360,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libpixbuf_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(DEBUG_FLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/pstricks/Makefile.am src/dia-0.96.1/plug-ins/pstricks/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/pstricks/Makefile.am	2007-01-06 16:39:31.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/pstricks/Makefile.am	2007-03-29 12:27:49.250000000 -0500
 @@ -7,7 +7,8 @@
@@ -401,7 +372,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/Makefile.am src/dia-0.96.1/plug-ins/python/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/python/Makefile.am	2007-03-17 15:19:12.000000000 -0500
 +++ src/dia-0.96.1/plug-ins/python/Makefile.am	2007-03-29 12:27:49.250000000 -0500
 @@ -14,8 +14,8 @@
@@ -415,7 +385,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  libpython_plugin_la_SOURCES = \
  	pydia-color.c \
  	pydia-color.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-color.c src/dia-0.96.1/plug-ins/python/pydia-color.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-color.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-color.c	2007-03-29 12:27:49.265625000 -0500
 @@ -104,7 +104,7 @@
@@ -427,7 +396,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "DiaColor",
      sizeof(PyDiaColor),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-cpoint.c src/dia-0.96.1/plug-ins/python/pydia-cpoint.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-cpoint.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-cpoint.c	2007-03-29 12:27:49.265625000 -0500
 @@ -81,7 +81,7 @@
@@ -439,7 +407,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.ConnectionPoint",
      sizeof(PyDiaConnectionPoint),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-diagram.c src/dia-0.96.1/plug-ins/python/pydia-diagram.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-diagram.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-diagram.c	2007-03-29 12:27:49.281250000 -0500
 @@ -527,7 +527,7 @@
@@ -451,7 +418,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Diagram",
      sizeof(PyDiaDiagram),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-diagramdata.c src/dia-0.96.1/plug-ins/python/pydia-diagramdata.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-diagramdata.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-diagramdata.c	2007-03-29 12:27:49.281250000 -0500
 @@ -377,7 +377,7 @@
@@ -463,7 +429,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.DiagramData",
      sizeof(PyDiaDiagramData),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-display.c src/dia-0.96.1/plug-ins/python/pydia-display.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-display.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-display.c	2007-03-29 12:27:49.296875000 -0500
 @@ -233,7 +233,7 @@
@@ -475,7 +440,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Display",
      sizeof(PyDiaDisplay),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-error.c src/dia-0.96.1/plug-ins/python/pydia-error.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-error.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-error.c	2007-03-29 12:27:49.296875000 -0500
 @@ -160,7 +160,7 @@
@@ -487,7 +451,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "DiaError",
      sizeof(PyDiaError),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-export.c src/dia-0.96.1/plug-ins/python/pydia-export.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-export.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-export.c	2007-03-29 12:27:49.312500000 -0500
 @@ -80,7 +80,7 @@
@@ -499,7 +462,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.ExportFilter",
      sizeof(PyDiaExportFilter),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-font.c src/dia-0.96.1/plug-ins/python/pydia-font.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-font.c	2007-03-17 15:19:12.000000000 -0500
 +++ src/dia-0.96.1/plug-ins/python/pydia-font.c	2007-03-29 12:27:49.312500000 -0500
 @@ -126,7 +126,7 @@
@@ -511,7 +473,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Font",
      sizeof(PyDiaFont),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-geometry.c src/dia-0.96.1/plug-ins/python/pydia-geometry.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-geometry.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-geometry.c	2007-03-29 12:27:49.312500000 -0500
 @@ -452,7 +452,7 @@
@@ -550,7 +511,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Arrow",
      sizeof(PyDiaArrow),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-handle.c src/dia-0.96.1/plug-ins/python/pydia-handle.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-handle.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-handle.c	2007-03-29 12:27:49.328125000 -0500
 @@ -112,7 +112,7 @@
@@ -562,7 +522,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Handle",
      sizeof(PyDiaHandle),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-image.c src/dia-0.96.1/plug-ins/python/pydia-image.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-image.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-image.c	2007-03-29 12:27:49.328125000 -0500
 @@ -138,7 +138,7 @@
@@ -574,7 +533,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Image",
      sizeof(PyDiaImage),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-layer.c src/dia-0.96.1/plug-ins/python/pydia-layer.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-layer.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-layer.c	2007-03-29 12:27:49.343750000 -0500
 @@ -236,7 +236,7 @@
@@ -586,7 +544,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Layer",
      sizeof(PyDiaLayer),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-object.c src/dia-0.96.1/plug-ins/python/pydia-object.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-object.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-object.c	2007-03-29 12:27:49.359375000 -0500
 @@ -211,7 +211,7 @@
@@ -607,7 +564,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.ObjectType",
      sizeof(PyDiaObjectType),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-properties.c src/dia-0.96.1/plug-ins/python/pydia-properties.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-properties.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-properties.c	2007-03-29 12:27:49.359375000 -0500
 @@ -273,7 +273,7 @@
@@ -619,7 +575,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Properties",
      sizeof(PyDiaProperties),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-property.c src/dia-0.96.1/plug-ins/python/pydia-property.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-property.c	2007-02-21 07:36:35.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-property.c	2007-03-29 12:27:49.375000000 -0500
 @@ -764,7 +764,7 @@
@@ -631,7 +586,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Property",
      sizeof(PyDiaProperty),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/python/pydia-text.c src/dia-0.96.1/plug-ins/python/pydia-text.c
 --- origsrc/dia-0.96.1/plug-ins/python/pydia-text.c	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/python/pydia-text.c	2007-03-29 12:27:49.375000000 -0500
 @@ -120,7 +120,7 @@
@@ -643,7 +597,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      0,
      "dia.Text",
      sizeof(PyDiaText),
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/shape/Makefile.am src/dia-0.96.1/plug-ins/shape/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/shape/Makefile.am	2007-01-06 16:39:30.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/shape/Makefile.am	2007-03-29 12:27:49.375000000 -0500
 @@ -6,7 +6,8 @@
@@ -656,7 +609,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) \
  	$(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) $(XML_CFLAGS) \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/svg/Makefile.am src/dia-0.96.1/plug-ins/svg/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/svg/Makefile.am	2007-01-06 16:39:30.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/svg/Makefile.am	2007-03-29 12:27:49.390625000 -0500
 @@ -4,6 +4,7 @@
@@ -668,7 +620,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libsvg_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) $(XML_CFLAGS) $(DEBUG_CFLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/vdx/Makefile.am src/dia-0.96.1/plug-ins/vdx/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/vdx/Makefile.am	2007-03-19 02:40:56.000000000 -0500
 +++ src/dia-0.96.1/plug-ins/vdx/Makefile.am	2007-03-29 12:27:49.421875000 -0500
 @@ -11,6 +11,7 @@
@@ -680,7 +631,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libvdx_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_FLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/wmf/Makefile.am src/dia-0.96.1/plug-ins/wmf/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/wmf/Makefile.am	2007-01-06 16:39:28.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/wmf/Makefile.am	2007-03-29 12:27:49.437500000 -0500
 @@ -2,8 +2,8 @@
@@ -694,7 +644,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib \
    $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/wmf/wmf.cpp src/dia-0.96.1/plug-ins/wmf/wmf.cpp
 --- origsrc/dia-0.96.1/plug-ins/wmf/wmf.cpp	2007-03-18 14:49:15.000000000 -0500
 +++ src/dia-0.96.1/plug-ins/wmf/wmf.cpp	2007-03-29 12:27:49.437500000 -0500
 @@ -42,7 +42,7 @@
@@ -763,7 +712,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      /*
       * On non windoze platforms this plug-in currently is only
       * useful at compile/develoment time. The output is broken
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/wpg/Makefile.am src/dia-0.96.1/plug-ins/wpg/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/wpg/Makefile.am	2007-01-06 16:39:29.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/wpg/Makefile.am	2007-03-29 12:27:49.453125000 -0500
 @@ -1,7 +1,8 @@
@@ -776,7 +724,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib \
    $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS) \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/xfig/Makefile.am src/dia-0.96.1/plug-ins/xfig/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/xfig/Makefile.am	2007-01-06 16:39:30.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/xfig/Makefile.am	2007-03-29 12:27:49.453125000 -0500
 @@ -9,6 +9,7 @@
@@ -788,7 +735,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libxfig_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
  
  INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_FLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x '.intltool-merge-cache*' -x sheet-translation-report origsrc/dia-0.96.1/plug-ins/xslt/Makefile.am src/dia-0.96.1/plug-ins/xslt/Makefile.am
 --- origsrc/dia-0.96.1/plug-ins/xslt/Makefile.am	2007-01-06 16:39:29.000000000 -0600
 +++ src/dia-0.96.1/plug-ins/xslt/Makefile.am	2007-03-29 12:27:49.484375000 -0500
 @@ -21,8 +21,8 @@
