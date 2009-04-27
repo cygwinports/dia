@@ -1,0 +1,462 @@
+--- origsrc/dia-0.97-pre3/objects/AADL/Makefile.am	2008-07-19 04:31:55.000000000 -0500
++++ src/dia-0.97-pre3/objects/AADL/Makefile.am	2009-04-26 21:46:20.685875000 -0500
+@@ -21,7 +21,9 @@ libaadl_objects_la_SOURCES = \
+                              edit_port_declaration.h \
+                              edit_port_declaration.c 
+ 
+-libaadl_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libaadl_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libaadl_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/Database/Makefile.am	2008-07-19 05:16:31.000000000 -0500
++++ src/dia-0.97-pre3/objects/Database/Makefile.am	2009-04-26 21:46:58.264000000 -0500
+@@ -9,7 +9,9 @@ libdb_objects_la_SOURCES = \
+ 	reference.c \
+ 	compound.c
+ 
+-libdb_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libdb_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libdb_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/ER/Makefile.am	2008-07-19 05:30:44.000000000 -0500
++++ src/dia-0.97-pre3/objects/ER/Makefile.am	2009-04-26 21:47:04.279625000 -0500
+@@ -8,7 +8,9 @@ liber_objects_la_SOURCES = \
+ 			participation.c \
+ 			er.c
+ 
+-liber_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++liber_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++liber_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/FS/Makefile.am	2009-01-11 13:24:11.000000000 -0600
++++ src/dia-0.97-pre3/objects/FS/Makefile.am	2009-04-26 21:47:07.170250000 -0500
+@@ -7,7 +7,9 @@ libfs_objects_la_SOURCES = \
+ 			flow-ortho.c \
+ 			function.c
+ 
+-libfs_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libfs_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libfs_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/GRAFCET/Makefile.am	2008-07-19 05:39:33.000000000 -0500
++++ src/dia-0.97-pre3/objects/GRAFCET/Makefile.am	2009-04-26 21:47:11.373375000 -0500
+@@ -15,7 +15,9 @@ libgrafcet_objects_la_SOURCES = \
+ 			vergent.c \
+ 			vector.c
+ 
+-libgrafcet_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libgrafcet_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libgrafcet_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/Istar/Makefile.am	2008-07-19 05:41:05.000000000 -0500
++++ src/dia-0.97-pre3/objects/Istar/Makefile.am	2009-04-26 21:47:14.185875000 -0500
+@@ -9,7 +9,9 @@ libistar_objects_la_SOURCES = \
+ 			other.c \
+ 			link.c
+ 
+-libistar_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libistar_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libistar_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/Jackson/Makefile.am	2008-07-19 05:42:24.000000000 -0500
++++ src/dia-0.97-pre3/objects/Jackson/Makefile.am	2009-04-26 21:47:17.373375000 -0500
+@@ -8,7 +8,9 @@ libjackson_objects_la_SOURCES = \
+ 			requirement.c \
+ 			phenomenon.c
+ 
+-libjackson_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libjackson_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libjackson_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/KAOS/Makefile.am	2008-07-19 05:43:28.000000000 -0500
++++ src/dia-0.97-pre3/objects/KAOS/Makefile.am	2009-04-26 21:47:20.592125000 -0500
+@@ -9,7 +9,9 @@ libkaos_objects_la_SOURCES = \
+ 			metabinrel.c \
+ 			metaandorrel.c
+ 
+-libkaos_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libkaos_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libkaos_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/Misc/Makefile.am	2009-01-31 15:08:03.000000000 -0600
++++ src/dia-0.97-pre3/objects/Misc/Makefile.am	2009-04-26 21:47:23.623375000 -0500
+@@ -9,7 +9,9 @@ libmisc_objects_la_SOURCES = \
+ 			tree.c
+ 
+ 
+-libmisc_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libmisc_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libmisc_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/SADT/Makefile.am	2008-07-19 05:51:56.000000000 -0500
++++ src/dia-0.97-pre3/objects/SADT/Makefile.am	2009-04-26 21:47:26.170250000 -0500
+@@ -8,7 +8,9 @@ libsadt_objects_la_SOURCES = \
+ 			box.c \
+ 			annotation.c 
+ 
+-libsadt_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libsadt_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libsadt_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/SISSI/Makefile.am	2008-07-19 05:52:38.000000000 -0500
++++ src/dia-0.97-pre3/objects/SISSI/Makefile.am	2009-04-26 21:47:47.248375000 -0500
+@@ -19,7 +19,9 @@ libsissi_objects_la_SOURCES = \
+ 	area.c \
+ 	area.h
+ 
+-libsissi_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libsissi_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libsissi_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/UML/Makefile.am	2008-08-09 11:21:06.000000000 -0500
++++ src/dia-0.97-pre3/objects/UML/Makefile.am	2009-04-26 21:47:57.185875000 -0500
+@@ -38,8 +38,9 @@ libuml_objects_la_SOURCES = \
+ 			umlparameter.c \
+ 			umlformalparameter.c
+ 
+-libuml_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
+-libuml_objects_la_LIBADD = $(CAIRO_LIBS) $(top_builddir)/lib/libdia.la
++libuml_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libuml_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(CAIRO_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/chronogram/Makefile.am	2008-07-19 04:41:16.000000000 -0500
++++ src/dia-0.97-pre3/objects/chronogram/Makefile.am	2009-04-26 21:48:02.092125000 -0500
+@@ -10,7 +10,9 @@ libchronogram_objects_la_SOURCES = \
+ 			chronoline_event.c
+ 
+ 
+-libchronogram_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libchronogram_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libchronogram_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(UNICODE_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/custom/Makefile.am	2008-07-19 04:44:02.000000000 -0500
++++ src/dia-0.97-pre3/objects/custom/Makefile.am	2009-04-26 21:48:05.420250000 -0500
+@@ -11,7 +11,9 @@ libcustom_objects_la_SOURCES = \
+ 	custom_util.h \
+ 	custom.c
+ 
+-libcustom_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libcustom_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libcustom_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ shapedir = $(pkgdatadir)/shapes
+ 
+--- origsrc/dia-0.97-pre3/objects/custom_lines/Makefile.am	2008-07-19 05:15:17.000000000 -0500
++++ src/dia-0.97-pre3/objects/custom_lines/Makefile.am	2009-04-26 21:48:18.779625000 -0500
+@@ -8,7 +8,9 @@ libcustom_lines_objects_la_SOURCES = \
+ 	line_info.c \
+ 	line_info.h
+ 
+-libcustom_lines_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libcustom_lines_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libcustom_lines_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = \
+ 	-I$(srcdir)/../../lib \
+--- origsrc/dia-0.97-pre3/objects/flowchart/Makefile.am	2008-07-19 05:32:53.000000000 -0500
++++ src/dia-0.97-pre3/objects/flowchart/Makefile.am	2009-04-26 21:48:21.498375000 -0500
+@@ -8,7 +8,9 @@ libflowchart_objects_la_SOURCES = \
+ 			ellipse.c \
+ 			flowchart.c
+ 
+-libflowchart_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libflowchart_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libflowchart_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/network/Makefile.am	2008-07-19 05:50:22.000000000 -0500
++++ src/dia-0.97-pre3/objects/network/Makefile.am	2009-04-26 21:48:26.232750000 -0500
+@@ -9,7 +9,9 @@ libnetwork_objects_la_SOURCES = \
+ 			      basestation.c \
+ 			      wanlink.c 
+ 
+-libnetwork_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libnetwork_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libnetwork_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/objects/standard/Makefile.am	2008-07-19 05:57:33.000000000 -0500
++++ src/dia-0.97-pre3/objects/standard/Makefile.am	2009-04-26 21:48:29.467125000 -0500
+@@ -16,7 +16,9 @@ libstandard_objects_la_SOURCES = \
+ 	beziergon.c \
+ 	tool-icons.h
+ 
+-libstandard_objects_la_LDFLAGS = -export-dynamic -module -avoid-version
++libstandard_objects_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libstandard_objects_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ ICON_PNG_PAIRS= \
+ 	arc_icon $(srcdir)/pixmaps/arc.png \
+--- origsrc/dia-0.97-pre3/plug-ins/cairo/Makefile.am	2008-08-09 11:16:25.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/cairo/Makefile.am	2009-04-26 21:48:41.889000000 -0500
+@@ -13,7 +13,8 @@ EXTRA_DIST =
+ 
+ libcairo_filter_la_SOURCES = $(plugin_sources)
+ 
+-libcairo_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
+-libcairo_filter_la_LIBADD = $(CAIRO_LIBS) $(top_builddir)/lib/libdia.la
++libcairo_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libcairo_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(CAIRO_LIBS)
+ 
+ INCLUDES = -I$(srcdir)/../../lib $(GTK_CFLAGS) $(DEBUG_FLAGS) $(CAIRO_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/cgm/Makefile.am	2008-07-19 07:09:08.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/cgm/Makefile.am	2009-04-26 21:48:44.967125000 -0500
+@@ -4,6 +4,8 @@ pkglib_LTLIBRARIES = libcgm_filter.la
+ 
+ libcgm_filter_la_SOURCES = cgm.c
+ 
+-libcgm_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libcgm_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libcgm_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(DEBUG_CFLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/drs/Makefile.am	2009-01-24 08:45:44.000000000 -0600
++++ src/dia-0.97-pre3/plug-ins/drs/Makefile.am	2009-04-26 21:48:49.185875000 -0500
+@@ -13,8 +13,9 @@ EXTRA_DIST = \
+ 
+ libdrs_filter_la_SOURCES = $(plugin_sources)
+ 
+-libdrs_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
+-libdrs_filter_la_LIBADD = $(CAIRO_LIBS) $(top_builddir)/lib/libdia.la
++libdrs_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libdrs_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(CAIRO_LIBS)
+ 
+ INCLUDES = -I$(srcdir)/../../lib $(GTK_CFLAGS) $(DEBUG_FLAGS)
+ 
+--- origsrc/dia-0.97-pre3/plug-ins/dxf/Makefile.am	2008-07-19 07:13:01.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/dxf/Makefile.am	2009-04-26 21:48:51.873375000 -0500
+@@ -9,6 +9,8 @@ libdxf_filter_la_SOURCES = \
+ 	autocad_pal.c \
+ 	autocad_pal.h
+ 
+-libdxf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libdxf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libdxf_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib  $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/hpgl/Makefile.am	2008-07-19 07:12:45.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/hpgl/Makefile.am	2009-04-26 21:48:57.201500000 -0500
+@@ -1,6 +1,8 @@
+ pkglib_LTLIBRARIES = libhpgl_filter.la
+ 
+ libhpgl_filter_la_SOURCES = hpgl.c
+-libhpgl_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libhpgl_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libhpgl_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/libart/Makefile.am	2008-06-08 08:31:58.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/libart/Makefile.am	2009-04-26 21:45:59.107750000 -0500
+@@ -13,8 +13,8 @@ EXTRA_DIST =
+ 
+ libart_filter_la_SOURCES = $(plugin_sources)
+ 
+-libart_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libart_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
+ 
+-libart_filter_la_LIBADD = $(LIBART_LIBS) $(LIBPNG_LIBS)
++libart_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(LIBART_LIBS) $(LIBPNG_LIBS)
+ 
+ INCLUDES = -I$(srcdir)/../../lib $(GTK_CFLAGS) $(DEBUG_FLAGS) $(LIBART_CFLAGS) $(LIBPNG_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/metapost/Makefile.am	2008-07-19 07:12:13.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/metapost/Makefile.am	2009-04-26 21:49:03.373375000 -0500
+@@ -7,6 +7,8 @@ libmetapost_filter_la_SOURCES = \
+ 	render_metapost.c \
+ 	render_metapost.h
+ 
+-libmetapost_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libmetapost_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libmetapost_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib  $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/pgf/Makefile.am	2008-07-19 07:13:40.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/pgf/Makefile.am	2009-04-26 21:49:05.982750000 -0500
+@@ -7,6 +7,8 @@ libpgf_filter_la_SOURCES = \
+ 	render_pgf.c \
+ 	render_pgf.h
+ 
+-libpgf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libpgf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libpgf_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/pixbuf/Makefile.am	2008-06-08 08:31:58.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/pixbuf/Makefile.am	2009-04-26 21:49:09.045250000 -0500
+@@ -5,6 +5,8 @@ pkglib_LTLIBRARIES = libpixbuf_filter.la
+ libpixbuf_filter_la_SOURCES = \
+ 	pixbuf.c
+ 
+-libpixbuf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libpixbuf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libpixbuf_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(DEBUG_FLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/postscript/Makefile.am	2008-06-08 08:31:58.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/postscript/Makefile.am	2009-04-26 21:49:29.904625000 -0500
+@@ -26,9 +26,9 @@ plugin_sources = \
+ 
+ libpostscript_filter_la_SOURCES = $(plugin_sources)
+ 
+-libpostscript_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libpostscript_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
+ 
+-libpostscript_filter_la_LIBADD =
++libpostscript_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ if WITH_FREETYPE
+ libpostscript_filter_la_LIBADD += $(FREETYPE_LIBS)
+ endif
+--- origsrc/dia-0.97-pre3/plug-ins/pstricks/Makefile.am	2008-07-19 07:14:12.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/pstricks/Makefile.am	2009-04-26 21:49:33.498375000 -0500
+@@ -7,6 +7,8 @@ libpstricks_filter_la_SOURCES = \
+ 	render_pstricks.c \
+ 	render_pstricks.h
+ 
+-libpstricks_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libpstricks_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libpstricks_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/shape/Makefile.am	2008-07-19 07:15:28.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/shape/Makefile.am	2009-04-26 21:49:44.420250000 -0500
+@@ -6,7 +6,9 @@ libshape_filter_la_SOURCES = \
+ 	shape.c \
+ 	shape-export.c
+ 
+-libshape_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libshape_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libshape_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(XML_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/svg/Makefile.am	2008-07-19 07:16:01.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/svg/Makefile.am	2009-04-26 21:49:47.232750000 -0500
+@@ -4,7 +4,9 @@ pkglib_LTLIBRARIES = libsvg_filter.la
+ 
+ libsvg_filter_la_SOURCES = svg.c render_svg.c svg-import.c
+ 
+-libsvg_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libsvg_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libsvg_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib \
+ 	$(DEBUG_FLAGS) $(GTK_CFLAGS) $(XML_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/vdx/Makefile.am	2008-06-08 08:31:58.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/vdx/Makefile.am	2009-04-26 21:49:50.748375000 -0500
+@@ -11,6 +11,8 @@ libvdx_filter_la_SOURCES = \
+ 	vdx-xml.c \
+ 	vdx.h
+ 
+-libvdx_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libvdx_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libvdx_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_FLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/wmf/Makefile.am	2009-01-09 12:19:48.000000000 -0600
++++ src/dia-0.97-pre3/plug-ins/wmf/Makefile.am	2009-04-26 21:50:09.529625000 -0500
+@@ -7,8 +7,8 @@ endif
+ pkglib_LTLIBRARIES = libwmf_filter.la
+ 
+ libwmf_filter_la_SOURCES = $(plugin_sources)
+-libwmf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version 
+-libwmf_filter_la_LIBADD = $(LIBEMF_LIBS)
++libwmf_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++libwmf_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(LIBEMF_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib \
+   $(DEBUG_FLAGS) $(GTK_CFLAGS) $(LIBEMF_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/wpg/Makefile.am	2008-07-19 07:17:04.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/wpg/Makefile.am	2009-04-26 21:46:07.389000000 -0500
+@@ -1,7 +1,8 @@
+ pkglib_LTLIBRARIES = libwpg_filter.la
+ 
+ libwpg_filter_la_SOURCES = wpg.c wpg_defs.h
+-libwpg_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libwpg_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++libwpg_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(top_srcdir)/lib \
+   $(DEBUG_FLAGS) $(GTK_CFLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/xfig/Makefile.am	2008-06-08 08:31:58.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/xfig/Makefile.am	2009-04-26 21:50:19.982750000 -0500
+@@ -9,6 +9,8 @@ libxfig_filter_la_SOURCES = \
+ 	xfig-common.c \
+ 	xfig.h
+ 
+-libxfig_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libxfig_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++
++libxfig_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_FLAGS)
+--- origsrc/dia-0.97-pre3/plug-ins/xslt/Makefile.am	2009-01-09 17:25:04.000000000 -0600
++++ src/dia-0.97-pre3/plug-ins/xslt/Makefile.am	2009-04-26 21:46:07.435875000 -0500
+@@ -21,9 +21,9 @@ pkglib_LTLIBRARIES = libxslt_filter.la
+ 
+ libxslt_filter_la_SOURCES = $(plugin_sources)
+ 
+-libxslt_filter_la_LDFLAGS = -export-dynamic -module -avoid-version
++libxslt_filter_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
+ 
+-libxslt_filter_la_LIBADD = $(XSLT_LIBS)
++libxslt_filter_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(XSLT_LIBS)
+ 
+ INCLUDES = -I$(top_srcdir)/intl -I$(srcdir)/../../lib $(GTK_CFLAGS) $(GNOME_CFLAGS) $(PANGOFT2_CFLAGS) $(XML_CFLAGS) $(UNICODE_CFLAGS) $(DEBUG_FLAGS) $(XSLT_CFLAGS)
+ 

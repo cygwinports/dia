@@ -1,0 +1,16 @@
+inherit gnome2
+
+DESCRIPTION="GNOME diagram modeller"
+HOMEPAGE="http://live.gnome.org/Dia"
+SRC_URI="mirror://gnome/sources/dia/${PV[1]}.${PV[2]}/${P/_/-}.tar.bz2"
+SRC_DIR=${P/_/-}
+
+PATCH_URI="0.97-libdia.patch
+           0.97-plugins-no-undefined.patch"
+
+# --enable-gnome doesn't actually do much
+# Python plugin, unlike others, requires symbols in dia.exe
+# libEMF does not export TextOutW, which is called by the wmf plugin
+CYGCONF_ARGS="--disable-gnome --with-cairo --without-python ac_cv_header_emf_h=no"
+
+DIFF_EXCLUDES=".intltool-merge-cache* sheet-translation-report"

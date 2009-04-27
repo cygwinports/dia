@@ -9,35 +9,34 @@ many other diagrams. It is also possible to add support for new shapes
 by writing simple XML files, using a subset of SVG to draw the shape.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.14-1
-  glib2-2.12.13-1
-  gtk2-x11-2.10.14-1
-  libart_lgpl2-2.3.19-1
-  libcairo2-1.4.10-1
-  libfreetype26-2.3.5-1
-  libgnomeprint22-2.18.0-1
-  libintl8-0.15-1
-  libpng12-1.2.18-1
-  libxml2-2.6.29-1
-  libxslt-1.1.20-1
-  pango-1.16.5-1
-  zlib-1.2.3-2
+  cygwin-1.7.0-45
+  libart_lgpl_2_2-2.3.20-10
+  libcairo2-1.8.6-10
+  libfreetype6-2.3.9-1
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.1-1
+  libglib2.0_0-2.20.1-1
+  libgtk2.0_0-2.16.1-1
+  libintl8-0.17-10
+  libpango1.0_0-1.24.1-1
+  libpng12-1.2.35-10
+  libxml2-2.7.3-10
+  libxslt-1.1.24-10
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  gnome-common-2.18.0-2
-  intltool-0.35.5-1
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -49,35 +48,35 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dia-0.96.1-X-src.tar.bz2
+  unpack dia-0.97_pre3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dia-0.96.1-X.cygport all
+  cygport ./dia-0.97_pre3-X.cygport all
 
 This will create:
-  /usr/src/dia-0.96.1-X-src.tar.bz2
-  /usr/src/dia-0.96.1-X.tar.bz2
+  /usr/src/dia-0.97_pre3-X-src.tar.bz2
+  /usr/src/dia-0.97_pre3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/dia.sh
-  /etc/preremove/dia.sh
   /usr/bin/cygdia.dll
   /usr/bin/dia.exe
   /usr/lib/dia/cygaadl_objects.dll
-  /usr/lib/dia/cygbondgraph_objects.dll
+  /usr/lib/dia/cygart_filter.dll
   /usr/lib/dia/cygcairo_filter.dll
   /usr/lib/dia/cygcgm_filter.dll
   /usr/lib/dia/cygchronogram_objects.dll
+  /usr/lib/dia/cygcustom_lines_objects.dll
   /usr/lib/dia/cygcustom_objects.dll
+  /usr/lib/dia/cygdb_objects.dll
   /usr/lib/dia/cygdxf_filter.dll
   /usr/lib/dia/cyger_objects.dll
   /usr/lib/dia/cygflowchart_objects.dll
   /usr/lib/dia/cygfs_objects.dll
-  /usr/lib/dia/cyggprint_filter.dll
   /usr/lib/dia/cyggrafcet_objects.dll
   /usr/lib/dia/cyghpgl_filter.dll
   /usr/lib/dia/cygistar_objects.dll
@@ -88,9 +87,11 @@ Files included in the binary package:
   /usr/lib/dia/cygnetwork_objects.dll
   /usr/lib/dia/cygpgf_filter.dll
   /usr/lib/dia/cygpixbuf_filter.dll
+  /usr/lib/dia/cygpostscript_filter.dll
   /usr/lib/dia/cygpstricks_filter.dll
   /usr/lib/dia/cygsadt_objects.dll
   /usr/lib/dia/cygshape_filter.dll
+  /usr/lib/dia/cygsissi_objects.dll
   /usr/lib/dia/cygstandard_objects.dll
   /usr/lib/dia/cygsvg_filter.dll
   /usr/lib/dia/cyguml_objects.dll
@@ -99,16 +100,17 @@ Files included in the binary package:
   /usr/lib/dia/cygxfig_filter.dll
   /usr/lib/dia/cygxslt_filter.dll
   /usr/lib/dia/libaadl_objects.la
-  /usr/lib/dia/libbondgraph_objects.la
+  /usr/lib/dia/libart_filter.la
   /usr/lib/dia/libcairo_filter.la
   /usr/lib/dia/libcgm_filter.la
   /usr/lib/dia/libchronogram_objects.la
+  /usr/lib/dia/libcustom_lines_objects.la
   /usr/lib/dia/libcustom_objects.la
+  /usr/lib/dia/libdb_objects.la
   /usr/lib/dia/libdxf_filter.la
   /usr/lib/dia/liber_objects.la
   /usr/lib/dia/libflowchart_objects.la
   /usr/lib/dia/libfs_objects.la
-  /usr/lib/dia/libgprint_filter.la
   /usr/lib/dia/libgrafcet_objects.la
   /usr/lib/dia/libhpgl_filter.la
   /usr/lib/dia/libistar_objects.la
@@ -119,9 +121,11 @@ Files included in the binary package:
   /usr/lib/dia/libnetwork_objects.la
   /usr/lib/dia/libpgf_filter.la
   /usr/lib/dia/libpixbuf_filter.la
+  /usr/lib/dia/libpostscript_filter.la
   /usr/lib/dia/libpstricks_filter.la
   /usr/lib/dia/libsadt_objects.la
   /usr/lib/dia/libshape_filter.la
+  /usr/lib/dia/libsissi_objects.la
   /usr/lib/dia/libstandard_objects.la
   /usr/lib/dia/libsvg_filter.la
   /usr/lib/dia/libuml_objects.la
@@ -132,7 +136,7 @@ Files included in the binary package:
   /usr/lib/libdia.dll.a
   /usr/lib/libdia.la
   /usr/share/applications/dia.desktop
-  /usr/share/dia/dia_logo.png
+  /usr/share/dia/dia-splash.png
   /usr/share/dia/shapes/Assorted/arrow-chevron.png
   /usr/share/dia/shapes/Assorted/arrow-chevron.shape
   /usr/share/dia/shapes/Assorted/arrow-down.png
@@ -1367,6 +1371,32 @@ Files included in the binary package:
   /usr/share/dia/shapes/Gane_and_Sarson/entity.shape
   /usr/share/dia/shapes/Gane_and_Sarson/process.png
   /usr/share/dia/shapes/Gane_and_Sarson/process.shape
+  /usr/share/dia/shapes/Lights/ACL.png
+  /usr/share/dia/shapes/Lights/ACL.shape
+  /usr/share/dia/shapes/Lights/Blacklight.png
+  /usr/share/dia/shapes/Lights/Blacklight.shape
+  /usr/share/dia/shapes/Lights/Blinders.png
+  /usr/share/dia/shapes/Lights/Blinders.shape
+  /usr/share/dia/shapes/Lights/ERS.png
+  /usr/share/dia/shapes/Lights/ERS.shape
+  /usr/share/dia/shapes/Lights/Fresnel.png
+  /usr/share/dia/shapes/Lights/Fresnel.shape
+  /usr/share/dia/shapes/Lights/Moving_head.png
+  /usr/share/dia/shapes/Lights/Moving_head.shape
+  /usr/share/dia/shapes/Lights/PAR.png
+  /usr/share/dia/shapes/Lights/PAR.shape
+  /usr/share/dia/shapes/Lights/PAR_floor.png
+  /usr/share/dia/shapes/Lights/PAR_floor.shape
+  /usr/share/dia/shapes/Lights/PC.png
+  /usr/share/dia/shapes/Lights/PC.shape
+  /usr/share/dia/shapes/Lights/Scanner.png
+  /usr/share/dia/shapes/Lights/Scanner.shape
+  /usr/share/dia/shapes/Lights/Striplight.png
+  /usr/share/dia/shapes/Lights/Striplight.shape
+  /usr/share/dia/shapes/Lights/Stroboscope.png
+  /usr/share/dia/shapes/Lights/Stroboscope.shape
+  /usr/share/dia/shapes/Lights/Structure.png
+  /usr/share/dia/shapes/Lights/Structure.shape
   /usr/share/dia/shapes/Logic/and.png
   /usr/share/dia/shapes/Logic/and.shape
   /usr/share/dia/shapes/Logic/buffer.png
@@ -1447,6 +1477,10 @@ Files included in the binary package:
   /usr/share/dia/shapes/Map/Isometric/Train2.shape
   /usr/share/dia/shapes/Map/Isometric/Tree1.png
   /usr/share/dia/shapes/Map/Isometric/Tree1.shape
+  /usr/share/dia/shapes/Misc/expended-node.png
+  /usr/share/dia/shapes/Misc/expended-node.shape
+  /usr/share/dia/shapes/Misc/expensible-node.png
+  /usr/share/dia/shapes/Misc/expensible-node.shape
   /usr/share/dia/shapes/Misc/file.png
   /usr/share/dia/shapes/Misc/file.shape
   /usr/share/dia/shapes/Misc/folder.png
@@ -1555,8 +1589,6 @@ Files included in the binary package:
   /usr/share/dia/shapes/Pneumatic/seijack.shape
   /usr/share/dia/shapes/Pneumatic/seojack.png
   /usr/share/dia/shapes/Pneumatic/seojack.shape
-  /usr/share/dia/shapes/RDP/arc.png
-  /usr/share/dia/shapes/RDP/arc_inhibiteur.png
   /usr/share/dia/shapes/RDP/place.png
   /usr/share/dia/shapes/RDP/place.shape
   /usr/share/dia/shapes/RDP/place_marquee.png
@@ -1650,6 +1682,7 @@ Files included in the binary package:
   /usr/share/dia/sheets/Circuit.sheet
   /usr/share/dia/sheets/Contact.sheet
   /usr/share/dia/sheets/Cybernetics.sheet
+  /usr/share/dia/sheets/Database.sheet
   /usr/share/dia/sheets/ER.sheet
   /usr/share/dia/sheets/ER/weakentity.png
   /usr/share/dia/sheets/Electric.sheet
@@ -1698,12 +1731,139 @@ Files included in the binary package:
   /usr/share/dia/sheets/KAOS/requirement.png
   /usr/share/dia/sheets/KAOS/responsibility.png
   /usr/share/dia/sheets/KAOS/softgoal.png
+  /usr/share/dia/sheets/Lights.sheet
   /usr/share/dia/sheets/Logic.sheet
   /usr/share/dia/sheets/MSE.sheet
   /usr/share/dia/sheets/Misc.sheet
   /usr/share/dia/sheets/Pneumatic.sheet
   /usr/share/dia/sheets/SADT.sheet
   /usr/share/dia/sheets/SDL.sheet
+  /usr/share/dia/sheets/SISSI.sheet
+  /usr/share/dia/sheets/SISSI/1.xml
+  /usr/share/dia/sheets/SISSI/10.xml
+  /usr/share/dia/sheets/SISSI/11.xml
+  /usr/share/dia/sheets/SISSI/12.xml
+  /usr/share/dia/sheets/SISSI/13.xml
+  /usr/share/dia/sheets/SISSI/14.xml
+  /usr/share/dia/sheets/SISSI/15.xml
+  /usr/share/dia/sheets/SISSI/16.xml
+  /usr/share/dia/sheets/SISSI/17.xml
+  /usr/share/dia/sheets/SISSI/18.xml
+  /usr/share/dia/sheets/SISSI/19.xml
+  /usr/share/dia/sheets/SISSI/2.xml
+  /usr/share/dia/sheets/SISSI/20.xml
+  /usr/share/dia/sheets/SISSI/21.xml
+  /usr/share/dia/sheets/SISSI/22.xml
+  /usr/share/dia/sheets/SISSI/23.xml
+  /usr/share/dia/sheets/SISSI/28.xml
+  /usr/share/dia/sheets/SISSI/29.xml
+  /usr/share/dia/sheets/SISSI/3.xml
+  /usr/share/dia/sheets/SISSI/30.xml
+  /usr/share/dia/sheets/SISSI/31.xml
+  /usr/share/dia/sheets/SISSI/32.xml
+  /usr/share/dia/sheets/SISSI/33.xml
+  /usr/share/dia/sheets/SISSI/34.xml
+  /usr/share/dia/sheets/SISSI/35.xml
+  /usr/share/dia/sheets/SISSI/36.xml
+  /usr/share/dia/sheets/SISSI/37.xml
+  /usr/share/dia/sheets/SISSI/38.xml
+  /usr/share/dia/sheets/SISSI/39.xml
+  /usr/share/dia/sheets/SISSI/4.xml
+  /usr/share/dia/sheets/SISSI/40.xml
+  /usr/share/dia/sheets/SISSI/41.xml
+  /usr/share/dia/sheets/SISSI/42.xml
+  /usr/share/dia/sheets/SISSI/43.xml
+  /usr/share/dia/sheets/SISSI/44.xml
+  /usr/share/dia/sheets/SISSI/45.xml
+  /usr/share/dia/sheets/SISSI/46.xml
+  /usr/share/dia/sheets/SISSI/47.xml
+  /usr/share/dia/sheets/SISSI/48.xml
+  /usr/share/dia/sheets/SISSI/5.xml
+  /usr/share/dia/sheets/SISSI/50.xml
+  /usr/share/dia/sheets/SISSI/51.xml
+  /usr/share/dia/sheets/SISSI/52.xml
+  /usr/share/dia/sheets/SISSI/53.xml
+  /usr/share/dia/sheets/SISSI/54.xml
+  /usr/share/dia/sheets/SISSI/55.xml
+  /usr/share/dia/sheets/SISSI/56.xml
+  /usr/share/dia/sheets/SISSI/57.xml
+  /usr/share/dia/sheets/SISSI/58.xml
+  /usr/share/dia/sheets/SISSI/59.xml
+  /usr/share/dia/sheets/SISSI/6.xml
+  /usr/share/dia/sheets/SISSI/60.xml
+  /usr/share/dia/sheets/SISSI/61.xml
+  /usr/share/dia/sheets/SISSI/62.xml
+  /usr/share/dia/sheets/SISSI/63.xml
+  /usr/share/dia/sheets/SISSI/7.xml
+  /usr/share/dia/sheets/SISSI/70.xml
+  /usr/share/dia/sheets/SISSI/71.xml
+  /usr/share/dia/sheets/SISSI/75.xml
+  /usr/share/dia/sheets/SISSI/76.xml
+  /usr/share/dia/sheets/SISSI/8.xml
+  /usr/share/dia/sheets/SISSI/9.xml
+  /usr/share/dia/sheets/SISSI/aircooler.png
+  /usr/share/dia/sheets/SISSI/alarm_center.png
+  /usr/share/dia/sheets/SISSI/analyse.xpm
+  /usr/share/dia/sheets/SISSI/barriere.png
+  /usr/share/dia/sheets/SISSI/camera_interphone.png
+  /usr/share/dia/sheets/SISSI/capteur_brise_glace.png
+  /usr/share/dia/sheets/SISSI/capteur_faisceau.png
+  /usr/share/dia/sheets/SISSI/cellular_phone.png
+  /usr/share/dia/sheets/SISSI/cloud.png
+  /usr/share/dia/sheets/SISSI/condensateur.png
+  /usr/share/dia/sheets/SISSI/detecteur_alimentation.png
+  /usr/share/dia/sheets/SISSI/detecteur_courant.png
+  /usr/share/dia/sheets/SISSI/detecteur_enthalpie.png
+  /usr/share/dia/sheets/SISSI/detecteur_fumee.png
+  /usr/share/dia/sheets/SISSI/detecteur_humidite.png
+  /usr/share/dia/sheets/SISSI/detecteur_lumiere.png
+  /usr/share/dia/sheets/SISSI/detecteur_mouvement.png
+  /usr/share/dia/sheets/SISSI/detecteur_mouvement_video.png
+  /usr/share/dia/sheets/SISSI/detecteur_niveau.png
+  /usr/share/dia/sheets/SISSI/detecteur_pression.png
+  /usr/share/dia/sheets/SISSI/detecteur_qualite_air.png
+  /usr/share/dia/sheets/SISSI/detecteur_tension.png
+  /usr/share/dia/sheets/SISSI/detecteur_vehicule.png
+  /usr/share/dia/sheets/SISSI/detecteur_vibration.png
+  /usr/share/dia/sheets/SISSI/digi_code.png
+  /usr/share/dia/sheets/SISSI/diskette.png
+  /usr/share/dia/sheets/SISSI/extincteur.png
+  /usr/share/dia/sheets/SISSI/extracteur_humidite.png
+  /usr/share/dia/sheets/SISSI/faraday.png
+  /usr/share/dia/sheets/SISSI/file.png
+  /usr/share/dia/sheets/SISSI/filtre_air.png
+  /usr/share/dia/sheets/SISSI/hub.png
+  /usr/share/dia/sheets/SISSI/ibm_mini.png
+  /usr/share/dia/sheets/SISSI/info.xpm
+  /usr/share/dia/sheets/SISSI/key.png
+  /usr/share/dia/sheets/SISSI/laptop.png
+  /usr/share/dia/sheets/SISSI/lecteur_badge.png
+  /usr/share/dia/sheets/SISSI/lecteur_badge_clavier.png
+  /usr/share/dia/sheets/SISSI/lecteur_biometrique.png
+  /usr/share/dia/sheets/SISSI/logiciel.xpm
+  /usr/share/dia/sheets/SISSI/menace.xpm
+  /usr/share/dia/sheets/SISSI/meuble.xpm
+  /usr/share/dia/sheets/SISSI/modem.png
+  /usr/share/dia/sheets/SISSI/onduleur.png
+  /usr/share/dia/sheets/SISSI/pc.png
+  /usr/share/dia/sheets/SISSI/pda.png
+  /usr/share/dia/sheets/SISSI/personne.xpm
+  /usr/share/dia/sheets/SISSI/phone.png
+  /usr/share/dia/sheets/SISSI/pompe.png
+  /usr/share/dia/sheets/SISSI/pompe_rotative.png
+  /usr/share/dia/sheets/SISSI/porte_tambour.png
+  /usr/share/dia/sheets/SISSI/relational_database.png
+  /usr/share/dia/sheets/SISSI/router.png
+  /usr/share/dia/sheets/SISSI/safe.png
+  /usr/share/dia/sheets/SISSI/sauvegarde.xpm
+  /usr/share/dia/sheets/SISSI/si.xpm
+  /usr/share/dia/sheets/SISSI/sissi_object.xpm
+  /usr/share/dia/sheets/SISSI/storage_array.png
+  /usr/share/dia/sheets/SISSI/support.xpm
+  /usr/share/dia/sheets/SISSI/tourniquet.png
+  /usr/share/dia/sheets/SISSI/ventilateur.png
+  /usr/share/dia/sheets/SISSI/ventilateur_axial.png
+  /usr/share/dia/sheets/SISSI/ventilateur_centrifuge.png
   /usr/share/dia/sheets/UML.sheet
   /usr/share/dia/sheets/UML/aggregation.png
   /usr/share/dia/sheets/UML/eventsink.png
@@ -1721,7 +1881,9 @@ Files included in the binary package:
   /usr/share/dia/sheets/network.sheet
   /usr/share/dia/sheets/sybase.sheet
   /usr/share/dia/ui/display-ui.xml
+  /usr/share/dia/ui/integrated-ui.xml
   /usr/share/dia/ui/popup-ui.xml
+  /usr/share/dia/ui/toolbar-ui.xml
   /usr/share/dia/ui/toolbox-ui.xml
   /usr/share/dia/xslt/dia-uml.xsl
   /usr/share/dia/xslt/dia-uml2c++.xsl
@@ -1731,23 +1893,104 @@ Files included in the binary package:
   /usr/share/dia/xslt/dia-uml2owl.xsl
   /usr/share/dia/xslt/dia-uml2python.xsl
   /usr/share/dia/xslt/stylesheets.xml
-  /usr/share/doc/Cygwin/dia-0.96.1.README
-  /usr/share/doc/dia-0.96.1/AUTHORS
-  /usr/share/doc/dia-0.96.1/COPYING
-  /usr/share/doc/dia-0.96.1/ChangeLog
-  /usr/share/doc/dia-0.96.1/INSTALL
-  /usr/share/doc/dia-0.96.1/MAINTAINERS
-  /usr/share/doc/dia-0.96.1/NEWS
-  /usr/share/doc/dia-0.96.1/README
-  /usr/share/doc/dia-0.96.1/THANKS
-  /usr/share/doc/dia-0.96.1/TODO
+  /usr/share/doc/dia/AUTHORS
+  /usr/share/doc/dia/COPYING
+  /usr/share/doc/dia/ChangeLog
+  /usr/share/doc/dia/MAINTAINERS
+  /usr/share/doc/dia/NEWS
+  /usr/share/doc/dia/README
+  /usr/share/doc/dia/THANKS
+  /usr/share/doc/dia/TODO
   /usr/share/gnome/help/dia/en/authors.xml
+  /usr/share/gnome/help/dia/en/custom-shapes.xml
+  /usr/share/gnome/help/dia/en/dia-1.xml
+  /usr/share/gnome/help/dia/en/dia-cmdline.xml
   /usr/share/gnome/help/dia/en/dia.xml
   /usr/share/gnome/help/dia/en/entities.xml
+  /usr/share/gnome/help/dia/en/graphics/adjacent.png
+  /usr/share/gnome/help/dia/en/graphics/after-hor-spread.png
+  /usr/share/gnome/help/dia/en/graphics/after-vert-spread.png
+  /usr/share/gnome/help/dia/en/graphics/align-bottom.png
+  /usr/share/gnome/help/dia/en/graphics/align-center.png
+  /usr/share/gnome/help/dia/en/graphics/align-left.png
+  /usr/share/gnome/help/dia/en/graphics/align-menu.png
+  /usr/share/gnome/help/dia/en/graphics/align-middle.png
+  /usr/share/gnome/help/dia/en/graphics/align-right.png
+  /usr/share/gnome/help/dia/en/graphics/align-top.png
+  /usr/share/gnome/help/dia/en/graphics/arrow-style.png
+  /usr/share/gnome/help/dia/en/graphics/assorted-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/before-hor-spread.png
+  /usr/share/gnome/help/dia/en/graphics/before-left.png
+  /usr/share/gnome/help/dia/en/graphics/before-top.png
+  /usr/share/gnome/help/dia/en/graphics/before-vert-spread.png
+  /usr/share/gnome/help/dia/en/graphics/bezierline-rightclick.png
+  /usr/share/gnome/help/dia/en/graphics/canvas-zoom.png
+  /usr/share/gnome/help/dia/en/graphics/cisco-computer-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/cisco-misc-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/cisco-network-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/cisco-switch-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/cisco-telephony-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/color-dropdown.png
+  /usr/share/gnome/help/dia/en/graphics/color-selector1.png
+  /usr/share/gnome/help/dia/en/graphics/color_selector.png
+  /usr/share/gnome/help/dia/en/graphics/connect-fixed.png
+  /usr/share/gnome/help/dia/en/graphics/connect-middle.png
+  /usr/share/gnome/help/dia/en/graphics/default-colors.png
+  /usr/share/gnome/help/dia/en/graphics/defaults-box.png
+  /usr/share/gnome/help/dia/en/graphics/defaults-text.png
+  /usr/share/gnome/help/dia/en/graphics/delete-text.png
+  /usr/share/gnome/help/dia/en/graphics/dia-startup.png
+  /usr/share/gnome/help/dia/en/graphics/diagram-properties-grid.png
+  /usr/share/gnome/help/dia/en/graphics/diagram-properties.png
+  /usr/share/gnome/help/dia/en/graphics/diagram-tree-sort.png
+  /usr/share/gnome/help/dia/en/graphics/diagram-tree.png
+  /usr/share/gnome/help/dia/en/graphics/edit-text.png
+  /usr/share/gnome/help/dia/en/graphics/file-preferences-diagram.png
+  /usr/share/gnome/help/dia/en/graphics/file-preferences-favorites.png
+  /usr/share/gnome/help/dia/en/graphics/file-preferences-tree.png
+  /usr/share/gnome/help/dia/en/graphics/file-preferences-ui.png
+  /usr/share/gnome/help/dia/en/graphics/file-preferences-view.png
+  /usr/share/gnome/help/dia/en/graphics/flowchart-shapes.png
   /usr/share/gnome/help/dia/en/graphics/greendots.png
   /usr/share/gnome/help/dia/en/graphics/home_network.png
+  /usr/share/gnome/help/dia/en/graphics/line-arrows.png
+  /usr/share/gnome/help/dia/en/graphics/line-buttons.png
+  /usr/share/gnome/help/dia/en/graphics/line-colors.png
+  /usr/share/gnome/help/dia/en/graphics/line-connect.png
+  /usr/share/gnome/help/dia/en/graphics/line-handles.png
+  /usr/share/gnome/help/dia/en/graphics/line-styles.png
+  /usr/share/gnome/help/dia/en/graphics/line-width.png
   /usr/share/gnome/help/dia/en/graphics/line_icon.png
   /usr/share/gnome/help/dia/en/graphics/line_props.png
+  /usr/share/gnome/help/dia/en/graphics/misc-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/network-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/object-group.png
+  /usr/share/gnome/help/dia/en/graphics/polyline-rightclick.png
+  /usr/share/gnome/help/dia/en/graphics/preferences-gridlines.png
+  /usr/share/gnome/help/dia/en/graphics/preferences_fig.png
+  /usr/share/gnome/help/dia/en/graphics/properties-uml-class1.png
+  /usr/share/gnome/help/dia/en/graphics/reverse-colors.png
+  /usr/share/gnome/help/dia/en/graphics/ruler-arrows.png
+  /usr/share/gnome/help/dia/en/graphics/sample-flowchart.png
+  /usr/share/gnome/help/dia/en/graphics/select-area.png
+  /usr/share/gnome/help/dia/en/graphics/select-menu.png
+  /usr/share/gnome/help/dia/en/graphics/selected-object.png
+  /usr/share/gnome/help/dia/en/graphics/sheets-objects.png
+  /usr/share/gnome/help/dia/en/graphics/snaptogrid-button.png
+  /usr/share/gnome/help/dia/en/graphics/stacked.png
+  /usr/share/gnome/help/dia/en/graphics/standard-line-properties.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-basic.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-image.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-lower.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-magnify.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-modify.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-scroll.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox-special.png
+  /usr/share/gnome/help/dia/en/graphics/toolbox.png
+  /usr/share/gnome/help/dia/en/graphics/uml-shapes.png
+  /usr/share/gnome/help/dia/en/graphics/view-menu.png
+  /usr/share/gnome/help/dia/en/graphics/view-zoom.png
+  /usr/share/gnome/help/dia/en/graphics/zigzagline-rightclick.png
   /usr/share/gnome/help/dia/en/intro.xml
   /usr/share/gnome/help/dia/en/license.xml
   /usr/share/gnome/help/dia/en/usage-canvas.xml
@@ -1759,15 +2002,68 @@ Files included in the binary package:
   /usr/share/gnome/help/dia/en/usage-objects-special.xml
   /usr/share/gnome/help/dia/en/usage-objects.xml
   /usr/share/gnome/help/dia/en/usage-quickstart.xml
+  /usr/share/gnome/help/dia/eu/authors.xml
   /usr/share/gnome/help/dia/eu/dia.xml
+  /usr/share/gnome/help/dia/eu/entities.xml
   /usr/share/gnome/help/dia/eu/graphics/greendots.png
   /usr/share/gnome/help/dia/eu/graphics/home_network.png
   /usr/share/gnome/help/dia/eu/graphics/line_icon.png
   /usr/share/gnome/help/dia/eu/graphics/line_props.png
+  /usr/share/gnome/help/dia/eu/intro.xml
+  /usr/share/gnome/help/dia/eu/license.xml
+  /usr/share/gnome/help/dia/eu/usage-canvas.xml
+  /usr/share/gnome/help/dia/eu/usage-customization.xml
+  /usr/share/gnome/help/dia/eu/usage-layers.xml
+  /usr/share/gnome/help/dia/eu/usage-loadsave.xml
+  /usr/share/gnome/help/dia/eu/usage-objects-basic.xml
+  /usr/share/gnome/help/dia/eu/usage-objects-selecting.xml
+  /usr/share/gnome/help/dia/eu/usage-objects-special.xml
+  /usr/share/gnome/help/dia/eu/usage-objects.xml
+  /usr/share/gnome/help/dia/eu/usage-quickstart.xml
+  /usr/share/gnome/help/dia/fr/authors.xml
+  /usr/share/gnome/help/dia/fr/custom-shapes.xml
+  /usr/share/gnome/help/dia/fr/dia-1.xml
+  /usr/share/gnome/help/dia/fr/dia-cmdline.xml
+  /usr/share/gnome/help/dia/fr/dia.xml
+  /usr/share/gnome/help/dia/fr/entities.xml
+  /usr/share/gnome/help/dia/fr/graphics/color_selector.png
+  /usr/share/gnome/help/dia/fr/graphics/greendots.png
+  /usr/share/gnome/help/dia/fr/graphics/home_network.png
+  /usr/share/gnome/help/dia/fr/graphics/line_icon.png
+  /usr/share/gnome/help/dia/fr/graphics/line_props.png
+  /usr/share/gnome/help/dia/fr/graphics/preferences_fig.png
+  /usr/share/gnome/help/dia/fr/intro.xml
+  /usr/share/gnome/help/dia/fr/license.xml
+  /usr/share/gnome/help/dia/fr/usage-canvas.xml
+  /usr/share/gnome/help/dia/fr/usage-customization.xml
+  /usr/share/gnome/help/dia/fr/usage-layers.xml
+  /usr/share/gnome/help/dia/fr/usage-loadsave.xml
+  /usr/share/gnome/help/dia/fr/usage-objects-basic.xml
+  /usr/share/gnome/help/dia/fr/usage-objects-selecting.xml
+  /usr/share/gnome/help/dia/fr/usage-objects-special.xml
+  /usr/share/gnome/help/dia/fr/usage-objects.xml
+  /usr/share/gnome/help/dia/fr/usage-quickstart.xml
+  /usr/share/gnome/help/dia/pl/authors.xml
   /usr/share/gnome/help/dia/pl/dia.xml
   /usr/share/gnome/help/dia/pl/graphics/greendots.png
   /usr/share/gnome/help/dia/pl/graphics/home_network.png
   /usr/share/gnome/help/dia/pl/graphics/line_props.png
+  /usr/share/gnome/help/dia/pl/intro.xml
+  /usr/share/gnome/help/dia/pl/license.xml
+  /usr/share/gnome/help/dia/pl/usage-canvas.xml
+  /usr/share/gnome/help/dia/pl/usage-customization.xml
+  /usr/share/gnome/help/dia/pl/usage-layers.xml
+  /usr/share/gnome/help/dia/pl/usage-loadsave.xml
+  /usr/share/gnome/help/dia/pl/usage-objects-selecting.xml
+  /usr/share/gnome/help/dia/pl/usage-objects-special.xml
+  /usr/share/gnome/help/dia/pl/usage-objects.xml
+  /usr/share/gnome/help/dia/pl/usage-quickstart.xml
+  /usr/share/icons/hicolor/16x16/apps/dia.png
+  /usr/share/icons/hicolor/22x22/apps/dia.png
+  /usr/share/icons/hicolor/24x24/apps/dia.png
+  /usr/share/icons/hicolor/32x32/apps/dia.png
+  /usr/share/icons/hicolor/48x48/apps/dia.png
+  /usr/share/icons/hicolor/scalable/apps/dia.svg
   /usr/share/locale/am/LC_MESSAGES/dia.mo
   /usr/share/locale/ar/LC_MESSAGES/dia.mo
   /usr/share/locale/az/LC_MESSAGES/dia.mo
@@ -1778,6 +2074,7 @@ Files included in the binary package:
   /usr/share/locale/cs/LC_MESSAGES/dia.mo
   /usr/share/locale/da/LC_MESSAGES/dia.mo
   /usr/share/locale/de/LC_MESSAGES/dia.mo
+  /usr/share/locale/dz/LC_MESSAGES/dia.mo
   /usr/share/locale/el/LC_MESSAGES/dia.mo
   /usr/share/locale/en_CA/LC_MESSAGES/dia.mo
   /usr/share/locale/en_GB/LC_MESSAGES/dia.mo
@@ -1800,11 +2097,14 @@ Files included in the binary package:
   /usr/share/locale/mk/LC_MESSAGES/dia.mo
   /usr/share/locale/ml/LC_MESSAGES/dia.mo
   /usr/share/locale/mn/LC_MESSAGES/dia.mo
+  /usr/share/locale/mr/LC_MESSAGES/dia.mo
   /usr/share/locale/ms/LC_MESSAGES/dia.mo
   /usr/share/locale/nb/LC_MESSAGES/dia.mo
   /usr/share/locale/ne/LC_MESSAGES/dia.mo
   /usr/share/locale/nl/LC_MESSAGES/dia.mo
   /usr/share/locale/nn/LC_MESSAGES/dia.mo
+  /usr/share/locale/oc/LC_MESSAGES/dia.mo
+  /usr/share/locale/pa/LC_MESSAGES/dia.mo
   /usr/share/locale/pl/LC_MESSAGES/dia.mo
   /usr/share/locale/pt/LC_MESSAGES/dia.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/dia.mo
@@ -1822,22 +2122,23 @@ Files included in the binary package:
   /usr/share/locale/uk/LC_MESSAGES/dia.mo
   /usr/share/locale/vi/LC_MESSAGES/dia.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/dia.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/dia.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/dia.mo
+  /usr/share/man/fr/man1/dia.1.gz
   /usr/share/man/man1/dia.1.gz
   /usr/share/mime-info/dia.keys
   /usr/share/mime-info/dia.mime
-  /usr/share/pixmaps/dia-diagram.png
-  /usr/share/pixmaps/dia_gnome_icon.png
+  /usr/share/omf/dia/dia-C.omf
+  /usr/share/omf/dia/dia-eu.omf
+  /usr/share/omf/dia/dia-fr.omf
+  /usr/share/omf/dia/dia-pl.omf
 
 ------------------
 
 Port Notes:
 
------ version 0.96.1-2 -----
-Fixed packaging.
-
------ version 0.96.1-1 -----
-Initial release for Cygwin.
+----- version 0.97_pre3-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

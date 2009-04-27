@@ -1,0 +1,256 @@
+--- origsrc/dia-0.97-pre3/acinclude.m4	2008-06-08 08:31:59.000000000 -0500
++++ src/dia-0.97-pre3/acinclude.m4	2009-04-26 21:32:06.310875000 -0500
+@@ -223,7 +223,7 @@ AC_DEFUN([AM_CHECK_PYTHON_LIB],
+ [AC_REQUIRE([AM_PATH_PYTHON])
+ AC_REQUIRE([AM_CHECK_PYTHON_HEADERS])
+ 
+-AC_MSG_CHECKING(for libpython${PYTHON_VERSION}.a)
++AC_MSG_CHECKING(for libpython${PYTHON_VERSION})
+ 
+ py_config_dir="$py_prefix/lib/python${PYTHON_VERSION}/config"
+ 
+@@ -235,7 +235,7 @@ dnl extra required libs
+   py_other_libs=`sed -n -e 's/^LIBS=\(.*\)/\1/p' $py_makefile`
+ 
+ dnl now the actual libpython
+-  if test -e "${py_config_dir}/libpython${PYTHON_VERSION}.a"; then
++  if test -e "${py_config_dir}/libpython${PYTHON_VERSION}.dll.a"; then
+     PYTHON_LIBS="-L${py_config_dir} -lpython${PYTHON_VERSION} $py_localmodlibs $py_basemodlibs $py_other_libs"
+     AC_MSG_RESULT(found)
+   else
+--- origsrc/dia-0.97-pre3/plug-ins/python/Makefile.am	2009-03-27 15:05:46.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/Makefile.am	2009-04-26 21:46:07.217125000 -0500
+@@ -14,8 +14,8 @@ endif
+ 
+ pkglib_LTLIBRARIES = $(libpython_plugin)
+ 
+-libpython_plugin_la_LDFLAGS = -export-dynamic -module -avoid-version
+-libpython_plugin_la_LIBADD = $(PYTHON_LIBS)
++libpython_plugin_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
++libpython_plugin_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(PYTHON_LIBS)
+ libpython_plugin_la_SOURCES = \
+ 	pydia-color.c \
+ 	pydia-color.h \
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-color.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-color.c	2009-04-26 21:46:07.264000000 -0500
+@@ -104,7 +104,7 @@ PyDiaColor_Str(PyDiaColor *self)
+  * Python objetcs
+  */
+ PyTypeObject PyDiaColor_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "DiaColor",
+     sizeof(PyDiaColor),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-cpoint.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-cpoint.c	2009-04-26 21:46:07.264000000 -0500
+@@ -81,7 +81,7 @@ PyDiaConnectionPoint_GetAttr(PyDiaConnec
+ }
+ 
+ PyTypeObject PyDiaConnectionPoint_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.ConnectionPoint",
+     sizeof(PyDiaConnectionPoint),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-diagram.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-diagram.c	2009-04-26 21:46:07.264000000 -0500
+@@ -527,7 +527,7 @@ PyDiaDiagram_GetAttr(PyDiaDiagram *self,
+ }
+ 
+ PyTypeObject PyDiaDiagram_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Diagram",
+     sizeof(PyDiaDiagram),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-diagramdata.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-diagramdata.c	2009-04-26 21:46:07.279625000 -0500
+@@ -376,7 +376,7 @@ PyDiaDiagramData_GetAttr(PyDiaDiagramDat
+ }
+ 
+ PyTypeObject PyDiaDiagramData_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.DiagramData",
+     sizeof(PyDiaDiagramData),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-display.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-display.c	2009-04-26 21:46:07.279625000 -0500
+@@ -233,7 +233,7 @@ PyDiaDisplay_GetAttr(PyDiaDisplay *self,
+ }
+ 
+ PyTypeObject PyDiaDisplay_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Display",
+     sizeof(PyDiaDisplay),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-error.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-error.c	2009-04-26 21:46:07.295250000 -0500
+@@ -160,7 +160,7 @@ PyDiaError_Str(PyDiaError *self)
+  * Python objetcs
+  */
+ PyTypeObject PyDiaError_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "DiaError",
+     sizeof(PyDiaError),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-export.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-export.c	2009-04-26 21:46:07.295250000 -0500
+@@ -80,7 +80,7 @@ PyDiaExportFilter_GetAttr(PyDiaExportFil
+ }
+ 
+ PyTypeObject PyDiaExportFilter_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.ExportFilter",
+     sizeof(PyDiaExportFilter),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-font.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-font.c	2009-04-26 21:46:07.310875000 -0500
+@@ -126,7 +126,7 @@ PyDiaFont_Str(PyDiaFont *self)
+  */
+ 
+ PyTypeObject PyDiaFont_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Font",
+     sizeof(PyDiaFont),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-geometry.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-geometry.c	2009-04-26 21:46:07.310875000 -0500
+@@ -452,7 +452,7 @@ static PySequenceMethods rect_as_sequenc
+  * Python objetcs
+  */
+ PyTypeObject PyDiaPoint_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Point",
+     sizeof(PyDiaPoint),
+@@ -477,7 +477,7 @@ PyTypeObject PyDiaPoint_Type = {
+ };
+ 
+ PyTypeObject PyDiaRectangle_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Rectangle",
+     sizeof(PyDiaRectangle),
+@@ -502,7 +502,7 @@ PyTypeObject PyDiaRectangle_Type = {
+ };
+ 
+ PyTypeObject PyDiaBezPoint_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.BezPoint",
+     sizeof(PyDiaBezPoint),
+@@ -527,7 +527,7 @@ PyTypeObject PyDiaBezPoint_Type = {
+ };
+ 
+ PyTypeObject PyDiaArrow_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Arrow",
+     sizeof(PyDiaArrow),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-handle.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-handle.c	2009-04-26 21:46:07.310875000 -0500
+@@ -112,7 +112,7 @@ PyDiaHandle_GetAttr(PyDiaHandle *self, g
+ }
+ 
+ PyTypeObject PyDiaHandle_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Handle",
+     sizeof(PyDiaHandle),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-image.c	2009-02-07 04:32:52.000000000 -0600
++++ src/dia-0.97-pre3/plug-ins/python/pydia-image.c	2009-04-26 21:46:07.326500000 -0500
+@@ -138,7 +138,7 @@ PyDiaImage_Str(PyDiaImage *self)
+  * Python objetcs
+  */
+ PyTypeObject PyDiaImage_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Image",
+     sizeof(PyDiaImage),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-layer.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-layer.c	2009-04-26 21:46:07.326500000 -0500
+@@ -236,7 +236,7 @@ PyDiaLayer_GetAttr(PyDiaLayer *self, gch
+ }
+ 
+ PyTypeObject PyDiaLayer_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Layer",
+     sizeof(PyDiaLayer),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-object.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-object.c	2009-04-26 21:46:07.326500000 -0500
+@@ -211,7 +211,7 @@ PyDiaObject_GetAttr(PyDiaObject *self, g
+ }
+ 
+ PyTypeObject PyDiaObject_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Object",
+     sizeof(PyDiaObject),
+@@ -343,7 +343,7 @@ PyDiaObjectType_GetAttr(PyDiaObjectType 
+ }
+ 
+ PyTypeObject PyDiaObjectType_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.ObjectType",
+     sizeof(PyDiaObjectType),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-paperinfo.c	2009-03-15 14:06:09.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-paperinfo.c	2009-04-26 22:49:52.201500000 -0500
+@@ -111,7 +111,7 @@ PyDiaPaperinfo_Str(PyDiaPaperinfo *self)
+  * Python objetcs
+  */
+ PyTypeObject PyDiaPaperinfo_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Paperinfo",
+     sizeof(PyDiaPaperinfo),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-properties.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-properties.c	2009-04-26 21:46:07.342125000 -0500
+@@ -273,7 +273,7 @@ PyDiaProperties_GetAttr(PyDiaProperties 
+  * Python object
+  */
+ PyTypeObject PyDiaProperties_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Properties",
+     sizeof(PyDiaProperties),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-property.c	2009-03-26 09:16:41.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-property.c	2009-04-26 21:46:07.342125000 -0500
+@@ -855,7 +855,7 @@ PyDiaProperty_Str(PyDiaProperty *self)
+  * Python object
+  */
+ PyTypeObject PyDiaProperty_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Property",
+     sizeof(PyDiaProperty),
+--- origsrc/dia-0.97-pre3/plug-ins/python/pydia-text.c	2008-06-08 08:31:57.000000000 -0500
++++ src/dia-0.97-pre3/plug-ins/python/pydia-text.c	2009-04-26 21:46:07.357750000 -0500
+@@ -120,7 +120,7 @@ PyDiaText_Str(PyDiaText *self)
+  * Python objetcs
+  */
+ PyTypeObject PyDiaText_Type = {
+-    PyObject_HEAD_INIT(&PyType_Type)
++    PyObject_HEAD_INIT(NULL)
+     0,
+     "dia.Text",
+     sizeof(PyDiaText),
