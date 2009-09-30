@@ -1,0 +1,11 @@
+--- origsrc/dia-0.97/plug-ins/wmf/wmf_gdi.cpp	2009-04-17 03:25:24.000000000 -0500
++++ src/dia-0.97/plug-ins/wmf/wmf_gdi.cpp	2009-09-29 16:10:38.257503700 -0500
+@@ -342,7 +342,7 @@ Rectangle(HDC hdc, wmfint iLeft, wmfint 
+ }
+ 
+ BOOL
+-RoundRect(HDC hdc, int iLeft, int iTop, int iRight, int iBottom, int iWidth, int iHeight)
++RoundRect(HDC hdc, wmfint iLeft, wmfint iTop, wmfint iRight, wmfint iBottom, wmfint iWidth, wmfint iHeight)
+ {
+   g_return_val_if_fail(hdc != NULL, FALSE);
+ 
