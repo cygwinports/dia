@@ -1,0 +1,42 @@
+OMF category 'GNOME|Office' not recognised, ignoring.
+
+--- origsrc/dia-0.97.1/doc/en/dia-C.omf	2009-11-07 08:28:34.000000000 -0600
++++ src/dia-0.97.1/doc/en/dia-C.omf	2010-01-24 20:50:13.108851200 -0600
+@@ -20,7 +20,6 @@
+    <subject category="GNOME|Applications|Graphics"></subject>
+    <subject category="GNOME|Applications|Office"></subject>
+    <subject category="Applications|Multimedia|Graphics"></subject>
+-   <subject category="GNOME|Office"></subject>
+    <description>
+ 	The Dia Manual, Dia: the diagram editor
+    </description>
+--- origsrc/dia-0.97.1/doc/eu/dia-eu.omf	2009-11-07 08:28:34.000000000 -0600
++++ src/dia-0.97.1/doc/eu/dia-eu.omf	2010-01-24 20:50:16.269031900 -0600
+@@ -19,7 +19,6 @@
+    <subject category="GNOME|Applications|Graphics"></subject>
+    <subject category="GNOME|Applications|Office"></subject>
+    <subject category="Applications|Multimedia|Graphics"></subject>
+-   <subject category="GNOME|Office"></subject>
+    <description>
+ 	Dia-ren eskuliburua
+    </description>
+--- origsrc/dia-0.97.1/doc/fr/dia-fr.omf	2009-11-07 08:28:34.000000000 -0600
++++ src/dia-0.97.1/doc/fr/dia-fr.omf	2010-01-24 20:50:19.452214000 -0600
+@@ -20,7 +20,6 @@
+    <subject category="GNOME|Applications|Graphics"></subject>
+    <subject category="GNOME|Applications|Office"></subject>
+    <subject category="Applications|Multimedia|Graphics"></subject>
+-   <subject category="GNOME|Office"></subject>
+    <description>
+ 	Manuel d'utilisation de Dia, l'Ã©diteur de diagrammes
+    </description>
+--- origsrc/dia-0.97.1/doc/pl/dia-pl.omf	2009-11-07 08:28:34.000000000 -0600
++++ src/dia-0.97.1/doc/pl/dia-pl.omf	2010-01-24 20:50:22.549391100 -0600
+@@ -21,7 +21,6 @@
+    <subject category="GNOME|Applications|Graphics"></subject>
+    <subject category="GNOME|Applications|Office"></subject>
+    <subject category="Applications|Multimedia|Graphics"></subject>
+-   <subject category="GNOME|Office"></subject>
+    <description>
+ 	Podrêcznik Dia
+    </description>

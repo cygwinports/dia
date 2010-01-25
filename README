@@ -9,32 +9,32 @@ many other diagrams. It is also possible to add support for new shapes
 by writing simple XML files, using a subset of SVG to draw the shape.
 
 Runtime requirements:
-  cygwin-1.7.0-61
+  cygwin-1.7.1-1
   libart_lgpl_2_2-2.3.20-10
   libcairo2-1.8.8-1
-  libfreetype6-2.3.9-2
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.6-1
-  libglib2.0_0-2.20.5-1
-  libgtk2.0_0-2.16.6-1
+  libfreetype6-2.3.11-1
+  libgcc1-4.3.4-3
+  libgdk_pixbuf2.0_0-2.18.6-1
+  libglib2.0_0-2.22.4-1
+  libgtk2.0_0-2.18.6-1
   libintl8-0.17-11
-  libpango1.0_0-1.24.5-1
+  libpango1.0_0-1.26.2-1
   libpng12-1.2.35-10
-  libxml2-2.7.3-11
-  libxslt-1.1.24-10
+  libxml2-2.7.6-1
+  libxslt-1.1.26-1
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
   binutils-2.19.51-1
-  cygport-0.9.9-1
+  cygport-0.9.80-1
   gawk-3.1.7-1
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-2
+  gcc4-core-4.3.4-3
+  gnome-common-2.28.0-1
   intltool-0.40.6-1
-  libtool-2.2.7a-14
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -48,19 +48,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dia-0.97-X-src.tar.bz2
+  unpack dia-0.97.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dia-0.97-X.cygport all
+  cygport ./dia-0.97.1-X.cygport all
 
 This will create:
-  /usr/src/dia-0.97-X-src.tar.bz2
-  /usr/src/dia-0.97-X.tar.bz2
+  /usr/src/dia-0.97.1-X-src.tar.bz2
+  /usr/src/dia-0.97.1-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.97.1-1 -----
+Version bump.
 
 ----- version 0.97-1 -----
 Version bump.

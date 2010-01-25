@@ -20,17 +20,15 @@
    else
 --- origsrc/dia-0.97-pre3/plug-ins/python/Makefile.am	2009-03-27 15:05:46.000000000 -0500
 +++ src/dia-0.97-pre3/plug-ins/python/Makefile.am	2009-04-26 21:46:07.217125000 -0500
-@@ -14,8 +14,8 @@ endif
+@@ -14,7 +14,7 @@ endif
  
  pkglib_LTLIBRARIES = $(libpython_plugin)
  
 -libpython_plugin_la_LDFLAGS = -export-dynamic -module -avoid-version
--libpython_plugin_la_LIBADD = $(PYTHON_LIBS)
-+libpython_plugin_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
-+libpython_plugin_la_LIBADD = $(top_builddir)/lib/libdia.la $(GTK_LIBS) $(PYTHON_LIBS)
++libpython_plugin_la_LDFLAGS = -export-dynamic -module -avoid-version $(PLUGIN_LIBTOOL_FLAGS)
+ libpython_plugin_la_LIBADD = $(PYTHON_LIBS)
  libpython_plugin_la_SOURCES = \
  	pydia-color.c \
- 	pydia-color.h \
 --- origsrc/dia-0.97-pre3/plug-ins/python/pydia-color.c	2008-06-08 08:31:57.000000000 -0500
 +++ src/dia-0.97-pre3/plug-ins/python/pydia-color.c	2009-04-26 21:46:07.264000000 -0500
 @@ -104,7 +104,7 @@ PyDiaColor_Str(PyDiaColor *self)

@@ -1,0 +1,17 @@
+--- origsrc/dia-0.97.1/app/commands.c	2009-11-07 11:13:53.000000000 -0600
++++ src/dia-0.97.1/app/commands.c	2010-01-24 21:30:39.641640900 -0600
+@@ -634,6 +634,14 @@ help_manual_callback (GtkAction *action)
+ {
+ #ifdef GNOME
+   gnome_help_display("dia", NULL, NULL);
++#elif GTK_CHECK_VERSION(2, 14, 0)
++  GError *error = NULL;
++
++  if (!gtk_show_uri(NULL, "ghelp:dia", GDK_CURRENT_TIME, &error)) {
++    message_warning(_("Could not open help directory:\n%s"),
++                    error->message);
++    g_error_free (error);
++  }
+ #else
+   char *helpdir, *helpindex = NULL, *command;
+   guint bestscore = G_MAXINT;
