@@ -1,14 +1,5 @@
 --- origsrc/dia-0.97-pre3/lib/Makefile.am	2009-02-01 12:05:18.000000000 -0600
 +++ src/dia-0.97-pre3/lib/Makefile.am	2009-04-26 21:23:13.045250000 -0500
-@@ -29,7 +29,7 @@ stdprop_files = \
- 	propdialogs.c  \
- 	propregistry.c 
- 
--pkglib_LTLIBRARIES =     libdia.la
-+lib_LTLIBRARIES =     libdia.la
- 
- ICON_PNG_PAIRS= \
- 	dia_broken_icon $(srcdir)/pixmaps/broken.png \
 @@ -178,7 +178,7 @@ libdia_la_SOURCES =  \
  #		render.h \
  #		render.c 
@@ -18,17 +9,3 @@
  libdia_la_LIBADD = $(GTK_LIBS)
  
  AM_CPPFLAGS = \
---- origsrc/dia-0.97-pre3/lib/plug-ins.c	2009-02-08 07:22:04.000000000 -0600
-+++ src/dia-0.97-pre3/lib/plug-ins.c	2009-04-26 21:38:31.717125000 -0500
-@@ -257,11 +257,6 @@ dia_register_plugin(const gchar *filenam
-       return;
-   }
- 
--  /* If trying to load libdia, abort */
--  if (strstr(filename, "libdia.")) {
--    return;
--  }
--
-   /* set up plugin info structure */
-   info = g_new0(PluginInfo, 1);
-   info->filename = g_strdup(filename);
