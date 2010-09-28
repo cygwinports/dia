@@ -1,5 +1,5 @@
 category: Graphics Gnome
-requires: libart_lgpl_2_2 libcairo2 libfreetype6 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libpng12 libxml2 libxslt zlib0 xdg-utils
+requires: libart_lgpl_2_2 libcairo2 libfreetype6 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libpng14 libxml2 libxslt zlib0 xdg-utils
 sdesc: "GNOME diagram modeler"
 ldesc: "Dia is a GTK+ based diagram creation program roughly inspired by 
 the commercial Windows program 'Visio', though more geared towards 
