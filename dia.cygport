@@ -1,0 +1,39 @@
+inherit gnome2
+
+NAME="dia"
+VERSION=0.97.2
+RELEASE=2
+CATEGORY="Graphics Gnome"
+SUMMARY="GNOME diagram modeller"
+DESCRIPTION="Dia is a GTK+ based diagram creation program roughly inspired by
+the commercial Windows program 'Visio', though more geared towards informal
+diagrams for casual use. It can be used to draw many different kinds of
+diagrams. It currently has special objects to help draw entity relationship
+diagrams, UML diagrams, flowcharts, network diagrams, and many other diagrams.
+It is also possible to add support for new shapes by writing simple XML files,
+using a subset of SVG to draw the shape."
+HOMEPAGE="http://live.gnome.org/Dia"
+
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-noglib.patch
+	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-unregister-import.patch
+	0.97-libdia.patch
+	0.97-gcc43.patch
+	0.97-plugins-no-undefined.patch
+	0.97-gtk-help.patch
+	0.97-omf-categories.patch
+"
+
+# --enable-gnome doesn't actually do much
+# libEMF does not export TextOutW, which is called by the wmf plugin
+# Python plugin causes segfaults on launch
+CYGCONF_ARGS="
+	--disable-gnome
+	--disable-libemf
+	--with-cairo
+	--without-python
+"
+
+DIFF_EXCLUDES=".intltool-merge-cache* sheet-translation-report"
+
+KEEP_LA_FILES="none"
