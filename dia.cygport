@@ -2,8 +2,8 @@ inherit gnome2
 
 NAME="dia"
 VERSION=0.97.2
-RELEASE=2
-CATEGORY="Graphics Gnome"
+RELEASE=3
+CATEGORY="Graphics"
 SUMMARY="GNOME diagram modeller"
 DESCRIPTION="Dia is a GTK+ based diagram creation program roughly inspired by
 the commercial Windows program 'Visio', though more geared towards informal
@@ -17,6 +17,7 @@ HOMEPAGE="http://live.gnome.org/Dia"
 PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-noglib.patch
 	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-unregister-import.patch
+	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-glib.patch
 	0.97-libdia.patch
 	0.97-gcc43.patch
 	0.97-plugins-no-undefined.patch
@@ -36,4 +37,3 @@ CYGCONF_ARGS="
 
 DIFF_EXCLUDES=".intltool-merge-cache* sheet-translation-report"
 
-KEEP_LA_FILES="none"
