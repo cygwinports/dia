@@ -23,6 +23,7 @@ PATCH_URI="
 	0.97-plugins-no-undefined.patch
 	0.97-gtk-help.patch
 	0.97-omf-categories.patch
+	0.97-Werror-implicit.patch
 "
 
 # --enable-gnome doesn't actually do much
