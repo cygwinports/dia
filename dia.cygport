@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="dia"
-VERSION=0.97.2
-RELEASE=3
+VERSION=0.97.3
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="GNOME diagram modeller"
 DESCRIPTION="Dia is a GTK+ based diagram creation program roughly inspired by
@@ -15,15 +15,11 @@ using a subset of SVG to draw the shape."
 HOMEPAGE="http://live.gnome.org/Dia"
 
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-noglib.patch
-	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-unregister-import.patch
-	http://pkgs.fedoraproject.org/cgit/dia.git/plain/dia-glib.patch
 	0.97-libdia.patch
 	0.97-gcc43.patch
 	0.97-plugins-no-undefined.patch
 	0.97-gtk-help.patch
 	0.97-omf-categories.patch
-	0.97-Werror-implicit.patch
 "
 
 # --enable-gnome doesn't actually do much
